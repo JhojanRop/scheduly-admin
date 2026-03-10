@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import SubjectsStep from '../components/onboarding/SubjectsStep'
+import SectionsStep from '../components/onboarding/SectionsStep'
 
 const steps = [
   { id: 1, label: 'Materias', component: SubjectsStep },
-  { id: 2, label: 'Secciones', component: () => <div>Secciones — próximamente</div> },
+  { id: 2, label: 'Secciones', component: SectionsStep },
   { id: 3, label: 'Reglas', component: () => <div>Reglas — próximamente</div> },
 ]
 
