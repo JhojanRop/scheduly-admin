@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import SubjectsStep from '../components/onboarding/SubjectsStep'
 import SectionsStep from '../components/onboarding/SectionsStep'
+import RulesStep from '../components/onboarding/RulesStep'
 
 const steps = [
   { id: 1, label: 'Materias', component: SubjectsStep },
   { id: 2, label: 'Secciones', component: SectionsStep },
-  { id: 3, label: 'Reglas', component: () => <div>Reglas — próximamente</div> },
+  { id: 3, label: 'Reglas', component: RulesStep },
 ]
 
 const OnboardingPage = () => {
