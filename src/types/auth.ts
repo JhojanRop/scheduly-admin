@@ -27,8 +27,17 @@ export const registerResponseSchema = z.object({
   createdAt: z.string(),
 })
 
+export const userProfileSchema = z.object({
+  id: z.string(),
+  username: z.string(),
+  fullName: z.string(),
+  createdAt: z.string(),
+  hasData: z.boolean(),
+})
+
 export type User = z.infer<typeof userSchema>
 export type LoginForm = z.infer<typeof loginSchema>
 export type RegisterForm = z.infer<typeof registerSchema>
 export type AuthResponse = z.infer<typeof authResponseSchema>
 export type RegisterResponse = z.infer<typeof registerResponseSchema>
+export type UserProfile = z.infer<typeof userProfileSchema>
